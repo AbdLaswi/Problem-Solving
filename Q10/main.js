@@ -25,7 +25,7 @@ function timesOfMostFreqChar(arr) {
         count = 1;
       }
     }
-  console.log(count1);
+  return count1;
 }
 
 /* 
