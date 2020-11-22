@@ -5,7 +5,6 @@ console.log("Problem Solving Q: 8");
 /*  
 Write a function that returns the number of unique items in an array.
 */
-
 function uniqueItems(arr) {
   // YOUR CODE HERE
   arr.sort();

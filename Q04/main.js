@@ -35,7 +35,6 @@ function usernameValidation(str) {
     return true;
   }
 }
-
 /* 
 Examples:
 usernameValidation("u__hello_world123"); // => true

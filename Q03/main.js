@@ -12,7 +12,6 @@ function firstReverse(str) {
   str = str.split("").reverse().join("");
   return str;
 }
-
 /* 
 Examples:
 firstReverse("I Love Code"); // => 'edoC evoL I'

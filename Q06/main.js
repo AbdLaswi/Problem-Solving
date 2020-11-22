@@ -12,7 +12,6 @@ function evenOrNot(num) {
     return true;
   } else return false;
 }
-
 /* 
 Examples:
 evenOrNot(1) // => false

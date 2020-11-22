@@ -16,7 +16,6 @@ function longestWord(sen) {
   }
   return str;
 }
-
 /* 
 Examples:
 longestWord('lol time'); // => 'time'

@@ -27,7 +27,6 @@ function timesOfMostFreqChar(arr) {
     }
   return count1;
 }
-
 /* 
 Examples:
 timesOfMostFreqChar("hello world"); // => 3

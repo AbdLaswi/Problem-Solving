@@ -6,7 +6,6 @@ console.log("Problem Solving Q: 13");
 Write a function that calculates the largest possible sum of any n
 consecutive numbers in an array arr of integers (where n ≥ 1).
 */
-
 function largestPossibleSum(array, n) {
   // YOUR CODE HERE
   let location = 0;

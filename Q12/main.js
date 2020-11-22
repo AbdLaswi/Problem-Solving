@@ -18,7 +18,6 @@ function reverseEachWord(str) {
   Arr.join(" ");
   return Arr;
 }
-
 /* 
 Examples:
 reverseEachWord("Lets code guys") // => "steL edoc syug"

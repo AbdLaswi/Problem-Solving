@@ -1,5 +1,4 @@
 console.log("Problem Solving Q: 2 ");
-
 /* Longest Word 2 */
 
 /*  

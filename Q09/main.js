@@ -31,7 +31,6 @@ function longestSequence(arr) {
     return seq1;
   }
 }
-
 // Examples:
 //  longestSequence([0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 1]); // => 4
 // longestSequence([1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1]); // => 5

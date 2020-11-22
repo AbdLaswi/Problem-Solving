@@ -28,7 +28,6 @@ function findIntersection(strArr) {
   }
   return Arr;
 }
-
 /* 
 Examples:
 findIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]); // => '1,4,13'

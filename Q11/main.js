@@ -11,7 +11,6 @@ function isPowerOfTwo(num) {
   if (Math.sqrt(num) % 1 === 0) return "YES";
   else return "No";
 }
-
 /* 
 Examples:
 isPowerOfTwo(0) // => 'NO'  
