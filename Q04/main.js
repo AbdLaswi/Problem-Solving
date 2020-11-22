@@ -1,9 +1,10 @@
-console.log('Problem Solving Q: 4 ');
+console.log("Problem Solving Q: 4 ");
 
 /* Username Validation */
 
 /*  
-Have the function usernameValidation(str) take the str parameter being passed and determine if the string is a valid username according to the following rules:
+Have the function usernameValidation(str) take the str parameter
+being passed and determine if the string is a valid username according to the following rules:
 
 1. The username is between 4 and 25 characters.
 2. It must start with a letter.
@@ -15,11 +16,29 @@ If the username is valid then your program should return the string true, otherw
 
 function usernameValidation(str) {
   // YOUR CODE HERE
+  let len = str.length - 1;
+  console.log(str.length);
+  const [upperLetter, lowerLetter, symbol] = [
+    /[A-Z]/g,
+    /[a-z]/g,
+    /[.,!,@,#,$,%,^,&,*,?,~,-,(,), ]/g,
+  ];
+
+  if (str.length < 4 || str.length > 25) {
+    return false;
+  }
+  if (
+    (str[0].match(lowerLetter) || str[0].match(upperLetter)) &&
+    str[len] !== "_" &&
+    str.match(symbol) === null
+  ) {
+    return true;
+  }
 }
 
 /* 
 Examples:
-usernameValidation('aa_'); // => false
-usernameValidation('u__hello_world123'); // => true
+usernameValidation("u__hello_world123"); // => true
+usernameValidation("aa_"); // => false
 
 */
