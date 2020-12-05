@@ -24,15 +24,15 @@ const removeSymbol = (sen) => {
 };
 function longestWord_2(sen) {
   // YOUR CODE HERE
-  str = "";
+  longestWord = "";
   sen = removeSymbol(sen);
   sen = sen.join("").split(" ");
   for (let i = 0; i < sen.length; i++) {
-    if (sen[i].length > str.length) {
-      str = sen[i];
+    if (sen[i].length > longestWord.length) {
+      longestWord = sen[i];
     }
   }
-  return str;
+  return longestWord;
 }
 /* 
 Examples:

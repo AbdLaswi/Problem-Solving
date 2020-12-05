@@ -17,7 +17,6 @@ If the username is valid then your program should return the string true, otherw
 function usernameValidation(str) {
   // YOUR CODE HERE
   let len = str.length - 1;
-  console.log(str.length);
   const [upperLetter, lowerLetter, symbol] = [
     /[A-Z]/g,
     /[a-z]/g,
@@ -41,3 +40,7 @@ usernameValidation("u__hello_world123"); // => true
 usernameValidation("aa_"); // => false
 
 */
+function usernameValidation(str) {
+  const reg1 = /^[a-zA-Z]([a-zA-Z0-9_]){3,18}[a-zA-Z0-9]$/;
+  return reg1.test(str);
+}
