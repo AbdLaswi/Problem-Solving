@@ -1,4 +1,4 @@
-console.log('Problem Solving Q:16 ');
+console.log("Problem Solving Q:16 ");
 
 /* evenOccurrence */
 
@@ -6,8 +6,11 @@ console.log('Problem Solving Q:16 ');
 Find the first item that occurs an even number of times in an array.
 */
 
-function evenOccurrence() {
+function evenOccurrence(arr) {
   // YOUR CODE HERE
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] % 2 === 0 && arr[i] === arr[i + 1]) return arr[i];
+  }
 }
 
 /* 
