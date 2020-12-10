@@ -11,19 +11,19 @@ Do not return duplicate characters and ignore whitespace in your returned string
 function commonCharacters(firstStr, secStr) {
   // YOUR CODE HERE
   let arr = [];
-  let first = firstStr.split(" ").join("").split("");
-  let sec = secStr.split(" ").join("").split("");
-  for (let i = 0; i < first.length; i++) {
-    if (sec.includes(first[i])) {
-      if (!arr.includes(first[i])) arr.push(first[i]);
+  firstStr = firstStr.split(" ").join("").split("");
+  secStr = secStr.split(" ").join("").split("");
+  for (let i = 0; i < firstStr.length; i++) {
+    if (secStr.includes(firstStr[i])) {
+      if (!arr.includes(firstStr[i])) arr.push(firstStr[i]);
     }
   }
-  console.log(arr.join(""));
   return arr.join("");
 }
 /*
 Examples: 
 commonCharacters("abc", "abc"); // => 'abc'
 commonCharacters("What is love?", "Baby don't hurt me"); // => 'hatoe'
-commonCharacters("Riding on a buffalo makes me more approachable", "so what"); // => 'oash'
 */
+
+commonCharacters("Riding on a buffalo makes me more approachable", "so what"); // => 'oash'
