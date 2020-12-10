@@ -12,7 +12,7 @@ function firstNonRepeatedCharacter(str) {
   let char = str[0];
   for (let i = 0; i < str.length; i++) {
     str.shift();
-    if (!str.shift().includes(char)) {
+    if (!str.includes(char)) {
       return char;
     } else {
       char = str[i];
