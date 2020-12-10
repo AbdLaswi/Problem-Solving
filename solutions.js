@@ -61,8 +61,3 @@ function LongestWord(sen) {
 /* Q32:  */
 /* Q33:  */
 /* Q34:  */
-
-
-
-uniqueItems2([1, 1, 1, 1, 1]);
-
