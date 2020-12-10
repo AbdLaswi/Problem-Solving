@@ -24,6 +24,7 @@ const removeSymbol = (sen) => {
 };
 function longestWord_2(sen) {
   // YOUR CODE HERE
+<<<<<<< HEAD
   str = "";
   sen = removeSymbol(sen);
   sen = sen.join("").split(" ");
@@ -33,6 +34,17 @@ function longestWord_2(sen) {
     }
   }
   return str;
+=======
+  longestWord = "";
+  sen = removeSymbol(sen);
+  sen = sen.join("").split(" ");
+  for (let i = 0; i < sen.length; i++) {
+    if (sen[i].length > longestWord.length) {
+      longestWord = sen[i];
+    }
+  }
+  return longestWord;
+>>>>>>> 130b72bc80b758ad823d733efefcdef36ac14b45
 }
 /* 
 Examples:

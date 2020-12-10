@@ -18,9 +18,11 @@ function ArrayMiddle(arr) {
   return arr[middleNum];
 }
 
-ArrayMiddle([2, 3]); // => 2.5
+
 /* 
 Examples:
+ArrayMiddle([2, 3]); // => 2.5
+>>>>>>> 130b72bc80b758ad823d733efefcdef36ac14b45
 ArrayMiddle([200, 5, 100]); // => 5
 ArrayMiddle([2,3,2,3,2]) // => 2
 */
