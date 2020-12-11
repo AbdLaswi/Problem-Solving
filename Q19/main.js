@@ -1,4 +1,4 @@
-console.log('Problem Solving Q: 19');
+console.log("Problem Solving Q: 19");
 
 /* Is Subset Of */
 
@@ -9,7 +9,14 @@ To simplify the problem, you can assume that both arrays will contain only strin
 
 Array.prototype.isSubsetOf = function (array) {
   // YOUR CODE HERE
-}
+  let isSubset = true;
+  this.forEach((element) => {
+    if (!array.includes(element)) {
+      isSubset = false;
+    }
+  });
+  return isSubset;
+};
 
 /* 
 Examples:
