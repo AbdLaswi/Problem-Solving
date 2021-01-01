@@ -23,8 +23,7 @@ const removeSymbol = (sen) => {
   return sen;
 };
 function longestWord_2(sen) {
-  // YOUR CODE HERE
-<<<<<<< HEAD
+  // YOUR CODE HERE	  // YOUR CODE HERE
   str = "";
   sen = removeSymbol(sen);
   sen = sen.join("").split(" ");
@@ -34,18 +33,8 @@ function longestWord_2(sen) {
     }
   }
   return str;
-=======
-  longestWord = "";
-  sen = removeSymbol(sen);
-  sen = sen.join("").split(" ");
-  for (let i = 0; i < sen.length; i++) {
-    if (sen[i].length > longestWord.length) {
-      longestWord = sen[i];
-    }
-  }
-  return longestWord;
->>>>>>> 130b72bc80b758ad823d733efefcdef36ac14b45
 }
+
 /* 
 Examples:
 longestWord_2("lol!- time."); // => 'time'

@@ -14,6 +14,11 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+    if(n===1){
+        return "#"
+    }
+    
+}
 
 module.exports = pyramid;
