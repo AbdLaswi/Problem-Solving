@@ -1,4 +1,4 @@
-console.log('Problem Solving Q:24 ');
+console.log("Problem Solving Q:24 ");
 
 /* bubbleSort */
 
@@ -9,9 +9,21 @@ Bubble sort is considered the most basic sorting algorithm in Computer Science. 
     - In this way, the largest values 'bubble' to the end of the array.
   • Once it gets to the end of the array, it starts over and repeats the process until the array is sorted numerically.
 */
+const swapNumber = (array, firstValue, secValue) => {
+  let swapValue = array[firstValue];
+  array[firstValue] = array[secValue];
+  array[secValue] = swapValue;
+};
 
-function bubbleSort() {
-  // YOUR CODE HERE
+function bubbleSort(array) {
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 1; j < array.length; j++) {
+      if (array[j - 1] > array[j]) {
+        swapNumber(array, j - 1, j);
+      }
+    }
+  }
+  return array;
 }
 
 /* 

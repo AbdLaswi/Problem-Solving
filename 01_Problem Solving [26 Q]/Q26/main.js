@@ -1,4 +1,4 @@
-console.log('Problem Solving Q:26 ');
+console.log("Problem Solving Q:26 ");
 
 /*  */
 
@@ -6,8 +6,9 @@ console.log('Problem Solving Q:26 ');
 Write a JavaScript function to clone an array.
 */
 
-function array_Clone() {
+function array_Clone(array) {
   // YOUR CODE HERE
+  return array.slice(0);
 }
 
 /* 
