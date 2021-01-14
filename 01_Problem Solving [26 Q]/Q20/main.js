@@ -12,7 +12,6 @@ function largestProductOfThree(arr) {
   for (let i = 0; i < arr.length; i++) {
     num = num * arr[i];
   }
-  console.log(num)
   return num;
 }
 
